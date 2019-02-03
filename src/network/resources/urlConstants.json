@@ -1,0 +1,13 @@
+{
+    "domain": "https://megasoft.biz",
+    "paths": {
+        "get": {
+            "info": {
+                "prefix": "/vending/api",
+                "suffix": "/infos"
+            }
+        },
+        "post": {
+        }
+    }
+}
