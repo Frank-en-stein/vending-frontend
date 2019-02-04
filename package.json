@@ -2,6 +2,7 @@
   "name": "vending-frontend",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://megasoft.biz/vending/subvending/",
   "dependencies": {
     "axios": "^0.18.0",
     "react": "^16.7.0",

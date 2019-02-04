@@ -77,7 +77,7 @@ class App extends Component {
                                     return null;
                                 }
                                 return (
-                                    <img src={imageUrl} height="100" key={index} onLoad={()=>this.loaded(index)}/>
+                                    <img src={imageUrl} height="100" key={index} onLoad={()=>this.loaded(index)} hidden={true}/>
                                 );
                             })
                         }
