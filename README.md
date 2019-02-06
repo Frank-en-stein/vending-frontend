@@ -20,3 +20,7 @@ things to try:
 5. `sudo nano ~/.config/lxsession/LXDE/autostart`
 
 6. `@chromium https://megasoft.biz/vending/subvending --start-fullscreen`
+
+7. `sudo mkdir ~/.config/lxsession/LXDE-pi/`
+
+8. `sudo touch ~/.config/lxsession/LXDE-pi/autostart`
