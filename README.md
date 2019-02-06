@@ -14,3 +14,5 @@ things to try:
 2. `echo "@chromium https://megasoft.biz/vending/subvending --start-fullscreen" > ~/.config/lxsession/LXDE-pi/autostart`
 
 3. `echo "@chromium https://megasoft.biz/vending/subvending --start-fullscreen" > /etc/xdg/lxsession/LXDE/autostart`
+
+4. `echo "@chromium https://megasoft.biz/vending/subvending --start-fullscreen" >> /etc/xdg/lxsession/LXDE/autostart`
