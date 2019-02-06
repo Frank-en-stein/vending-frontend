@@ -24,3 +24,5 @@ things to try:
 7. `sudo mkdir -p ~/.config/lxsession/LXDE-pi/`
 
 8. `sudo touch ~/.config/lxsession/LXDE-pi/autostart`
+
+9. `sudo chmod 777 ~/.config/lxsession/LXDE-pi/autostart`
