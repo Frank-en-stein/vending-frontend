@@ -16,3 +16,7 @@ things to try:
 3. `echo "@chromium https://megasoft.biz/vending/subvending --start-fullscreen" > /etc/xdg/lxsession/LXDE/autostart`
 
 4. `echo "@chromium https://megasoft.biz/vending/subvending --start-fullscreen" >> /etc/xdg/lxsession/LXDE/autostart`
+
+5. `sudo nano ~/.config/lxsession/LXDE/autostart`
+
+6. `@chromium https://megasoft.biz/vending/subvending --start-fullscreen`
