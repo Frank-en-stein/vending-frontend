@@ -11,7 +11,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 things to try:
 1. `sudo nano ~/.config/lxsession/LXDE/autostart`
 
-2. `echo "@chromium https://megasoft.biz/vending/subvending --start-fullscreen" > ~/.config/lxsession/LXDE-pi/autostart`
+2. `sudo echo "@chromium https://megasoft.biz/vending/subvending --start-fullscreen" > ~/.config/lxsession/LXDE-pi/autostart`
 
 3. `echo "@chromium https://megasoft.biz/vending/subvending --start-fullscreen" > /etc/xdg/lxsession/LXDE/autostart`
 
