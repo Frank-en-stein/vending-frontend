@@ -12,7 +12,7 @@ things to try:
 1. `sudo nano ~/.config/lxsession/LXDE-pi/autostart`
 
 2. 
-`@lxpanel --profile LXDE-pi
+`@lxpanel --profile LXDE-pi\n
 @pcmanfm --desktop --profile LXDE-pi
 @xscreensaver -no-splash
 @point-rpi
