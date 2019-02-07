@@ -9,15 +9,18 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 
 things to try:
-1. `sudo nano ~/.config/lxsession/LXDE-pi/autostart`
+1. `mkdir -p ~/.config/lxsession/LXDE-pi`
 
-2. 
+2. `sudo nano ~/.config/lxsession/LXDE-pi/autostart`
+
+3. Copy paste the following:
+
 `@lxpanel --profile LXDE-pi`<br/>
 `@pcmanfm --desktop --profile LXDE-pi`<br/>
 `@xscreensaver -no-splash`<br/>
 `@point-rpi`<br/>
 `@chromium-browser https://megasoft.biz/vending/subvending --start-fullscreen`
 
-3. Now press ctrl + X, press shift + Y, press Enter.
+4. Now press ctrl + X, press shift + Y, press Enter.
 
-4. Restart your pi
+5. Restart your pi
