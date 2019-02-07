@@ -9,20 +9,15 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 
 things to try:
-1. `sudo nano ~/.config/lxsession/LXDE/autostart`
+1. `sudo nano ~/.config/lxsession/LXDE-pi/autostart`
 
-2. `sudo echo "@chromium https://megasoft.biz/vending/subvending --start-fullscreen" > ~/.config/lxsession/LXDE-pi/autostart`
+2. 
+`@lxpanel --profile LXDE-pi
+@pcmanfm --desktop --profile LXDE-pi
+@xscreensaver -no-splash
+@point-rpi
+@chromium-browser https://megasoft.biz/vending/subvending --start-fullscreen`
 
-3. `echo "@chromium https://megasoft.biz/vending/subvending --start-fullscreen" > /etc/xdg/lxsession/LXDE/autostart`
+3. Now press ctrl + X, press shift + Y, press Enter.
 
-4. `echo "@chromium https://megasoft.biz/vending/subvending --start-fullscreen" >> /etc/xdg/lxsession/LXDE/autostart`
-
-5. `sudo nano ~/.config/lxsession/LXDE/autostart`
-
-6. `@chromium https://megasoft.biz/vending/subvending --start-fullscreen`
-
-7. `sudo mkdir -p ~/.config/lxsession/LXDE-pi/`
-
-8. `sudo touch ~/.config/lxsession/LXDE-pi/autostart`
-
-9. `sudo chmod 777 ~/.config/lxsession/LXDE-pi/autostart`
+4. Restart your pi
