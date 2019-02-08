@@ -14,7 +14,8 @@ class App extends Component {
             dataUrl: [],
             interval: 3000,
             isLoaded: [],
-            autoPlay: true
+            autoPlay: true,
+            selectedItem: 0
         }
     }
     componentWillMount() {
@@ -42,7 +43,7 @@ class App extends Component {
                     if (data.interval !== this.state. interval) this.setState({interval: data.interval});
                 }
             });
-        }, 15000);
+        }, 30000);
     }
     loaded(index) {
         if (this.state.isLoaded[index]) return;
@@ -54,9 +55,17 @@ class App extends Component {
         })
     }
     handleChange(idx, el) {
-        if (this.state.dataUrl[idx] === null) return;
-        var elem = this.refs["video" + idx];
-        elem.play();
+        this.setState({selectedItem: idx}, () => {
+            if (this.state.dataUrl[idx] === null) {
+                return;
+            }
+            var elem = this.refs["video" + idx];
+            elem.play();
+        });
+    }
+    getVideoDuration() {
+        //console.log(this.state.selectedItem, this.refs["video" + this.state.selectedItem ] === undefined ? this.state.interval : this.refs["video" + this.state.selectedItem].duration);
+        return parseFloat(this.refs["video" + this.state.selectedItem ] === undefined ? this.state.interval : this.refs["video" + this.state.selectedItem].duration)*1000;
     }
     render() {
         return (
@@ -85,13 +94,14 @@ class App extends Component {
 
                     :
 
-                    <Carousel showThumbs={false} showArrows={false} infiniteLoop autoPlay={this.state.autoPlay} interval={parseInt(this.state.interval)}
-                        dynamicHeight={true} stopOnHover={false} onChange={(index, el) => this.handleChange(index, el)}>
+                    <Carousel showThumbs={false} showArrows={false} infiniteLoop autoPlay={this.state.autoPlay}
+                        interval={parseInt(this.state.dataUrl[this.state.selectedItem]===null ? this.state.interval : this.getVideoDuration() + 1000)}
+                        dynamicHeight={true} stopOnHover={false} onChange={(index, el) => this.handleChange(index, el)} selectedItem={this.state.selectedItem}>
                         {
                             this.state.images.map((imageUrl, index) => {
                                 if (!imageUrl.match(/.(jpg|jpeg|png|gif)$/i)) {
                                     return (
-                                        <video key={index} id={"video" + index} ref={"video" + index} height={window.innerHeight} onEnded={()=>setTimeout(()=>this.setState({autoPlay: true}), 500)}>
+                                        <video key={index} id={"video" + index} ref={"video" + index} height={window.innerHeight}>
                                             <source src={imageUrl} type="video/mp4"/>
                                             Your browser does not support the video tag.
                                         </video>
