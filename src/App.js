@@ -101,7 +101,7 @@ class App extends Component {
                             this.state.images.map((imageUrl, index) => {
                                 if (!imageUrl.match(/.(jpg|jpeg|png|gif)$/i)) {
                                     return (
-                                        <video key={index} id={"video" + index} ref={"video" + index} height={window.innerHeight}>
+                                        <video muted={true} key={index} id={"video" + index} ref={"video" + index} height={window.innerHeight}>
                                             <source src={imageUrl} type="video/mp4"/>
                                             Your browser does not support the video tag.
                                         </video>
