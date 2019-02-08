@@ -19,7 +19,7 @@ things to try:
 `@pcmanfm --desktop --profile LXDE-pi`<br/>
 `@xscreensaver -no-splash`<br/>
 `@point-rpi`<br/>
-`@chromium-browser https://megasoft.biz/vending/subvending --start-fullscreen --no-startup-window`
+`@chromium-browser --kiosk --app=https://megasoft.biz/vending/subvending --start-fullscreen`
 
 4. Now press ctrl + X, press shift + Y, press Enter.
 
