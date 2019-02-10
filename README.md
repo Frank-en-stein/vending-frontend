@@ -18,6 +18,9 @@ things to try:
 `@lxpanel --profile LXDE-pi`<br/>
 `@pcmanfm --desktop --profile LXDE-pi`<br/>
 `@point-rpi`<br/>
+`@xset s noblank`
+`@xset s off`
+`@xset s -dpms`
 `@chromium-browser --kiosk --app=https://megasoft.biz/vending/subvending --start-fullscreen`
 
 4. Now press ctrl + X, press shift + Y, press Enter.
