@@ -17,7 +17,6 @@ things to try:
 
 `@lxpanel --profile LXDE-pi`<br/>
 `@pcmanfm --desktop --profile LXDE-pi`<br/>
-`@xscreensaver -no-splash`<br/>
 `@point-rpi`<br/>
 `@chromium-browser --kiosk --app=https://megasoft.biz/vending/subvending --start-fullscreen`
 
